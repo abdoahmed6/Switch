@@ -1,0 +1,20 @@
+[
+    {
+        "name": "حساب 1",
+        "price": "500 جنيه",
+        "video": "account-video1.mp4",
+        "image": "account1.jpg"
+    },
+    {
+        "name": "حساب 2",
+        "price": "800 جنيه",
+        "video": "account-video2.mp4",
+        "image": "account2.jpg"
+    },
+    {
+        "name": "حساب 3",
+        "price": "650 جنيه",
+        "video": "account-video3.mp4",
+        "image": "account3.jpg"
+    }
+]

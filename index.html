@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسوتش</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">
+            <h1>اسوتش <span>Switch</span></h1>
+            <button class="theme-toggle">تبديل الوضع</button>
+        </div>
+    </header>
+
+    <!-- عرض الحسابات -->
+    <section class="show-accounts">
+        <button class="show-btn" onclick="toggleAccounts()">عرض الحسابات</button>
+    </section>
+
+    <!-- حسابات معروضة -->
+    <section class="accounts" id="accounts-list" style="display: none;">
+        <div class="account">
+            <img src="account1.jpg" alt="حساب 1" class="account-image">
+            <video controls autoplay loop muted class="account-video">
+                <source src="account-video1.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <h3>حساب 1</h3>
+            <p>السعر: 500 جنيه</p>
+            <button class="buy-btn" onclick="buyAccount('account-video1.mp4')">شراء</button>
+        </div>
+        
+        <div class="account">
+            <img src="account2.jpg" alt="حساب 2" class="account-image">
+            <video controls autoplay loop muted class="account-video">
+                <source src="account-video2.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <h3>حساب 2</h3>
+            <p>السعر: 800 جنيه</p>
+            <button class="buy-btn" onclick="buyAccount('account-video2.mp4')">شراء</button>
+        </div>
+
+        <div class="account">
+            <img src="account3.jpg" alt="حساب 3" class="account-image">
+            <video controls autoplay loop muted class="account-video">
+                <source src="account-video3.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <h3>حساب 3</h3>
+            <p>السعر: 650 جنيه</p>
+            <button class="buy-btn" onclick="buyAccount('account-video3.mp4')">شراء</button>
+        </div>
+    </section>
+
+    <!-- زر شحن الكوين -->
+    <section class="charge">
+        <button class="charge-btn">
+            <img src="coin-icon.png" alt="شحن الكوين" class="coin-icon">
+            شحن الكوين
+        </button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 اسوتش</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
